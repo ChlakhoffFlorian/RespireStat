@@ -1,9 +1,4 @@
 
 public class RespireStat {
-52912198
-651919
-651519
+	private String test;
 }
-kengan arouf
-arevzvrbtnyjbtrve
-cfghjkl

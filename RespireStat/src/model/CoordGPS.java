@@ -4,12 +4,18 @@ public class CoordGPS {
 	private double latitude;
 	private double longitude;
 	
-	public CoordGPS(String ){
-		
-	}
 	
 	public CoordGPS(double latitude , double longitude) {
 		this.latitude = latitude;
 		this.longitude = longitude;
 	}
+
+
+	public double Latitude(){
+		return latitude;
+	}
+	public double Longitude(){
+		return longitude;
+	}
+
 }

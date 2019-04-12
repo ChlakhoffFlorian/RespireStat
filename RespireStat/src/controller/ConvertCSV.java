@@ -6,12 +6,18 @@ import java.io.IOException;
 
 import com.opencsv.CSVReader;
 
+import model.Etablissement;
+import model.Lieu;
+import model.CoordGPS;
+import model.Type;
+
 public class ConvertCSV {
 	
 	public static void lire (String fileName) {
 	
 		try {
-			CSVReader reader = new CSVReader (new FileReader("fileName"));
+			@SuppressWarnings("resource")
+			CSVReader reader = new CSVReader (new FileReader(fileName));
 			String[] nextLine;
 			while((nextLine = reader.readNext()) != null) {
 				
@@ -19,6 +25,10 @@ public class ConvertCSV {
 					System.out.print(nextLine[i] + " ");
 				}
 				System.out.println();
+				new Etablissement(nextLine);
+				new Lieu(nextLine);
+				//new CoordGPS(nextLine);
+				//new Type(nextLine);	
 			}
 			
 		} catch (FileNotFoundException e) {

@@ -11,4 +11,10 @@ public class Lieu {
 		this.departement = departement;
 		this.ville = ville;
 	}
+	
+	
+	
+	
+	
+
 }

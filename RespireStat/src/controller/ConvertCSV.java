@@ -11,6 +11,7 @@ import model.Lieu;
 import model.CoordGPS;
 import model.Type;
 
+@SuppressWarnings("unused")
 public class ConvertCSV {
 	
 	public static void lire (String fileName) {
@@ -26,9 +27,7 @@ public class ConvertCSV {
 				}
 				System.out.println();
 				new Etablissement(nextLine);
-				new Lieu(nextLine);
-				//new CoordGPS(nextLine);
-				//new Type(nextLine);	
+			
 			}
 			
 		} catch (FileNotFoundException e) {

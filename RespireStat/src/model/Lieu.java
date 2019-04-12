@@ -8,10 +8,10 @@ public class Lieu {
 	
 	
 	
-	public Lieu (String [] nextLine) {
+	public Lieu (String departement,String ville,String codePostal) {
 		
-		departement = nextLine[3];
-		ville = nextLine[4];
-		codePostal = nextLine[5];
+		this.departement = departement;
+		this.ville = ville;
+		this.codePostal = codePostal;
 	}
 }

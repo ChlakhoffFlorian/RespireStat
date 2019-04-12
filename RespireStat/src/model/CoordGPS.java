@@ -11,11 +11,7 @@ public class CoordGPS {
 	}
 
 
-	public double Latitude(){
-		return latitude;
+	public CoordGPS(String geometry) {
+		 
 	}
-	public double Longitude(){
-		return longitude;
-	}
-
 }
